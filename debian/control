@@ -1,0 +1,29 @@
+Source: sugar-implode-activity
+Section: x11
+Priority: optional
+Maintainer: Debian Sugar Team <pkg-sugar-devel@lists.alioth.debian.org>
+Uploaders: Martin Abente Lahaye <tch@sugarlabs.org>
+Build-Depends: cdbs (>= 0.4.90~),
+ devscripts,
+ debhelper,
+ dh-buildinfo,
+ python,
+ python-sugar3,
+ unzip
+Standards-Version: 3.9.1
+X-Python-Version: 2.7
+Vcs-Git: https://github.com/tchx84/debian-sugar-implode-activity.git
+Vcs-Browser: https://github.com/tchx84/debian-sugar-implode-activity.git
+
+Package: sugar-implode-activity
+Architecture: all
+Depends: ${shlibs:Depends}, ${python:Depends}, ${cdbs:Depends}, ${misc:Depends}
+Recommends: ${cdbs:Recommends}
+Provides: ${python:Provides}, ${cdbs:Provides}
+Conflicts: ${cdbs:Conflicts}
+Replaces: ${cdbs:Replaces}
+Description: Sugar Implode activity
+ Sugar is a graphical user interface aimed at children.
+ .
+ Implode is a logic game based on falling-blocks model
+ of Tetris.
