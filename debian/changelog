@@ -1,3 +1,9 @@
+sugar-implode-activity (15-0tch4) UNRELEASED; urgency=medium
+
+  * Add missing glib dependency.
+
+ -- Martin Abente Lahaye <tch@sugarlabs.org>  Wed, 22 Apr 2015 19:23:42 -0400
+
 sugar-implode-activity (15-0tch3) UNRELEASED; urgency=medium
 
   * Revised dependencies.
