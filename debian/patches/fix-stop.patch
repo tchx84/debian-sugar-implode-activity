@@ -1,0 +1,24 @@
+From f15624f6dedc8af0f0d822bff8334af09e9f9b1a Mon Sep 17 00:00:00 2001
+From: James Cameron <quozl@laptop.org>
+Date: Wed, 1 Apr 2015 18:16:27 +1100
+Subject: [PATCH] fix stop accelerator
+
+the standard is to use ctrl-q, but code inherited from terminal activity
+was used by accident, so implode required ctrl-shift-q, so change it back.
+---
+ implodeactivity.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/implodeactivity.py b/implodeactivity.py
+index e3e74ba..c19e2b8 100644
+--- a/implodeactivity.py
++++ b/implodeactivity.py
+@@ -211,7 +211,7 @@ def _help_clicked_cb():
+         self._add_expander(toolbar)
+ 
+         stop_button = StopButton(self)
+-        stop_button.props.accelerator = '<Ctrl><Shift>Q'
++        stop_button.props.accelerator = '<Ctrl>Q'
+         toolbar_box.toolbar.insert(stop_button, -1)
+         stop_button.show()
+ 
